@@ -30,3 +30,21 @@ def init_user_routes(app):
             'address': address,
             'message': 'Register route hit successfully!'
         })
+
+
+    @app.route('/api/v2/user/register', methods=['POST','GET'])
+    def user_registers():
+        email = request.form.get('email', '')
+        password = request.form.get('password', '')
+        mobile=request.form.get('mobile', '')
+        name=request.form.get('name', '')
+        address=request.form.get('address', '')
+        # Example response
+        return jsonify({
+            'email': email,
+            'password': password,
+            'mobile': mobile,
+            'name': name,
+            'address': address,
+            'message': 'Register route hit successfully!'
+        })
