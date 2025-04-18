@@ -5,11 +5,8 @@ from flask import render_template,jsonify
 def init_page_routes(app):
     @app.route('/career')
     def career():
-        return jsonify({
-            'message': 'Career route hit successfully!'
-        })
+        return render_template('career.html')
     
-
     @app.route('/about')
     def about():
         return jsonify({

@@ -15,3 +15,6 @@ registerBtn.addEventListener('click', () => {
     alert('Register route hit successfully!')
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+    console.log("Career page loaded");
+});
