@@ -1,7 +1,4 @@
-
 from flask import render_template,jsonify
-
-
 def init_page_routes(app):
     @app.route('/career')
     def career():
@@ -9,27 +6,19 @@ def init_page_routes(app):
     
     @app.route('/about')
     def about():
-        return jsonify({
-            'message': 'About route hit successfully!'
-        })
+        return render_template('about.html')
 
     @app.route('/contact')
     def contact():
-        return jsonify({
-            'message': 'Contact route hit successfully!'
-        })
+        return render_template('contact.html')
 
     @app.route('/terms')
     def terms():
-        return jsonify({
-            'message': 'Terms route hit successfully!'
-        })
-
+        return render_template('terms.html')
+    
     @app.route('/privacy')
     def privacy():
-        return jsonify({
-            'message': 'Privacy route hit successfully!'
-        })
+        return render_template('privacy.html')
 
     @app.route('/logout')
     def user_logout():
@@ -54,3 +43,9 @@ def init_page_routes(app):
         return jsonify({
             'message': 'Room Analysis route hit successfully!'
         })
+
+    @app.route('/profile')
+    def profile():
+        return render_template('profile.html')
+
+    
