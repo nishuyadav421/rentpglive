@@ -48,4 +48,12 @@ def init_page_routes(app):
     def profile():
         return render_template('profile.html')
 
+    @app.route('/login')
+    def login():
+        return render_template('login.html')
+
+    @app.route('/register')
+    def register():
+        return render_template('register.html')
+
     
