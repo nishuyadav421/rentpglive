@@ -30,3 +30,5 @@ def init_user_routes(app):
             'address': address,
             'message': 'Register route hit successfully!'
         })
+        
+    
