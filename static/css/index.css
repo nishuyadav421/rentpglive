@@ -1,3 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar styling */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #007bff !important;
+}
+
+.navbar-nav .nav-link {
+    color: #555;
+    padding: 0.5rem 1rem;
+}
+
+.navbar-nav .nav-link.active {
+    color: #007bff;
+    font-weight: bold;
+    border-bottom: 2px solid #007bff;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #0056b3;
+}
+
+/* Responsive utility overrides */
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+}
+/* *{
+    margin:0;
+    padding:0 ;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+
+}
+body{
+    background:url(bg\ 1.jpg) ;
+    background-size:cover ;
+    background-repeat: no-repeat;
+    background-attachment:fixed ;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 110vh;
+    /* background: #000; */
+
 .two{
     display: flex;
     justify-content: space-between;
@@ -21,7 +81,7 @@ body {
 
 .card-text {
     color: #6c757d;
-}
+} 
 .login-container{
     position: absolute;
     left: 500px;
@@ -49,6 +109,92 @@ body {
     }
     
     .register-container header{
+        text-decoration: underline;
+    }
+    .top span{
+        color:#000;
+        margin-left:5px;
+        padding: 12px 0;
+        display: flex;
+        justify-content: center;
+    }
+    .top span a{
+        font-weight:500;
+        color: #000;
+        margin-left:5px;
+    }
+    header{
+        color: #2e0303;
+        font-size: 30px;
+        text-align: center;
+        padding: 10px 0 30px 0;
+    }
+    .two-forms{
+        display: flex;
+        gap: 18px;
+    }
+    .input-field{
+        font-size: 15px;
+        background: rgba(5, 5, 5, 0.1);
+        color: black;
+        height: 45px;
+        width: 131px;
+        padding: 0 5px 0 45px;
+        
+        border-radius: 10px;
+        outline: none;
+        transition: .5s ease; 
+    
+    }
+    .input-field:hover, .input-field:focus{
+        background: rgba(255,255,255,0.27);
+    
+    }
+    ::-webkit-input-placeholder{
+        color:#000;
+    }
+    
+    
+    .submit{
+        font-size: 15px;
+        font-weight: 500;
+        color: black;
+        height: 45px;
+        width: 131px;
+        border: none;
+        border-radius:15px;
+        outline: none;
+        background: rgba(105, 172, 17, 0.7);
+        cursor: pointer;
+        transition: .4s ease-in-out;
+    }
+    .submit:hover{
+        background: rgba(114, 109, 109, 0.5);
+        box-shadow: 1px 5px 7px 1px rgba(0,0,0,0.6);
+    }
+    .two-col{
+        display: flex;
+        justify-content:space-around;
+        color: #000;
+        font-size: small;
+        /* margin-top:50px;  */
+        text-align:center;
+        align-items: center;
+        
+    }
+    
+    .two-col .one{
+        display: flex;
+        gap: 70px;
+      
+       
+    }
+    .two label a{
+        text-decoration: none;
+        color: #000;
+        
+    }
+    .two label a:hover{
         text-decoration: underline;
     }
     
