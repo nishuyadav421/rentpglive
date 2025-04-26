@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RentPG | Home</title>
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='image/logo.png') }}">
 </head>
 <body>
 
@@ -14,7 +16,7 @@
         <div class="container-fluid">
           
           <!-- Brand -->
-          <a class="navbar-brand fw-bold fs-4" href="#">RentPG</a>
+        <img src="{{ url_for('static', filename='image/logo.png') }}" alt="RentPG Logo" class="img-fluid" width="60px" height="60px">
           
           <!-- Toggler for mobile -->
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -136,6 +138,7 @@
         </div>
     </form>
 
+<<<<<<< HEAD
     <!-- Booking -->
 
     <h2>Get a rental agreement prepared</h2>
@@ -176,6 +179,46 @@
 </form>
      </div>
        </section>
+=======
+    <!--About Us-->
+    <section class="about-us py-5 bg-light">
+        <div class="container">
+          <div class="text-center mb-5">
+            <h2 class="fw-bold">About Us</h2>
+            <h5 class="text-muted">ROOMZY & <span class="text-primary">Roomrent Management System</span></h5>
+          </div>
+      
+          <div class="row align-items-center">
+            <!-- Image Section -->
+            <div class="col-md-6 mb-4 mb-md-0 text-center">
+              <img src="{{ url_for('static', filename='image/logo.png') }}" class="img-fluid rounded shadow-sm" alt="About Image">
+            </div>
+      
+            <!-- Text Section -->
+            <div class="col-md-6">
+              <p>
+                The project entitled <strong>"ROOMZY"</strong> is a web-based application that allows users to find
+                homes and rooms according to their requirements, and lets them advertise their vacant
+                rooms or houses using web browsers.
+              </p>
+              <p>
+                Currently, customers need to visit multiple places in search of rooms, and house owners
+                must contact several people to find reliable tenants. With ROOMZY, users can search online
+                and directly contact the house owners, as all details are provided in each listing.
+              </p>
+              <p>
+                This saves valuable time for both seekers and renters. The website is built using a
+                3-tier architecture: frontend, backend, and database.
+              </p>
+              <p class="fw-semibold text-secondary">This is a College Project</p>
+              <a href="{{ url_for('about') }}" class="btn btn-primary mt-3">Read More</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      
+>>>>>>> d097e903fac7fa31959a6ab757213f5db208a3d4
 
     <!-- Team Section -->
 <section id="team" class="container my-5">
@@ -217,12 +260,16 @@
             </div>
         </div>
     </div>
+<<<<<<< HEAD
 
 </form> 
 
        
 =======
 <!-- </section> -->
+=======
+</section>
+>>>>>>> d097e903fac7fa31959a6ab757213f5db208a3d4
 
 <!-- Newsletter Section -->
 <section class="bg-light py-5">
@@ -312,7 +359,7 @@
             <a href="/logout" class="text-light text-decoration-none">Logout</a>
         </div>
         <div class="footer-credit text-center mb-2">
-            Designed and developed by <a href="https://www.instagram.com/panlogictech/" class="text-warning text-decoration-none">Panlogic Solution Team</a>
+            Designed and developed by <a href="https://panlogictech.onrender.com/" class="text-warning text-decoration-none">Panlogic Solution Team</a>
         </div>
         <div class="footer-bottom text-center">
             <p class="mb-0">&copy; 2025 RentPG. All rights reserved.</p>
@@ -321,6 +368,5 @@
 
     <script src="{{ url_for('static', filename='js/index.js') }}"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
->>>>>>> 5035c108812e9cde08b2b89f390789c21b2ae991
 </body>
 </html>
