@@ -4,7 +4,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin login page</title>
-    <link rel="stylesheet" href="admin.css">
+    <!-- <link rel="stylesheet" href="admin.css"> -->
+     <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url(snow.png);
+        background-repeat: no-repeat;
+        background-size:800px 2000px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    .container {
+        display: flex;
+         /* background: #fff;  */
+         background: transparent;
+       
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        max-width: 800px;
+        width: 100%;
+    }
+    
+    .myform {
+        flex: 1;
+        padding: 20px;
+    }
+    
+    .myform h2 {
+        margin-bottom: 20px;
+        font-size: 28px;
+        color: #faf5f5;
+        text-align: center;
+    }
+    
+    .myform input {
+        width: 100%;
+        padding: 12px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        font-size: 16px;
+    }
+    
+    .myform button {
+        width: 100%;
+        padding: 12px;
+        background-color: #4CAF50;
+        border: none;
+        border-radius: 6px;
+        color: white;
+        font-size: 18px;
+        cursor: pointer;
+        margin-top: 15px;
+        transition: background-color 0.3s;
+    }
+    
+    .myform button:hover {
+        background-color: #45a049;
+    }
+    
+    .image {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .image img {
+        max-width: 100%;
+        height: 400px;
+        width: 400px;
+        border-radius: 10px;
+    }
+    </style>
 </head>
 <body>
     <div class="container">
