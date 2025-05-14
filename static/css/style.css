@@ -1,15 +1,21 @@
+:root {
+    --pink: #FF90BB;
+    --teal: #8ACCD5;
+    --yellow: #F8F8E1;
+    --light-pink: #FFC1DA;
+    --black:#000000;
+}
+
 body {
     background-color: #f8f9fa;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-   
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-        /* background: url('{{ url_for("static", filename="images/login.jpg") }}') no-repeat center center; */
-        background: url('{{ url_for("static", filename="image/login.jpg") }}') no-repeat center center;
-        background-size: cover;
-      
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* background: url('{{ url_for("static", filename="images/login.jpg") }}') no-repeat center center; */
+    background: url('{{ url_for("static", filename="image/login.jpg") }}') no-repeat center center;
+    background-size: cover;
 }
 
